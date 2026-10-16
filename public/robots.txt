@@ -1,0 +1,8 @@
+# Robots.txt for न्यु प्रताप मित्र मंडळ (New Pratap Mitra Mandal)
+User-agent: *
+Disallow: /mr/admin
+Disallow: /en/admin
+Disallow: /admin
+Disallow: /api/
+
+Sitemap: https://newpratapmitramandal.org/sitemap.xml

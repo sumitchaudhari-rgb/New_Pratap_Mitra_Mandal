@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="192" height="192">
+  <defs>
+    <linearGradient id="bgGrad192" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B1A2C"/>
+      <stop offset="100%" stop-color="#3F070F"/>
+    </linearGradient>
+    <linearGradient id="goldGrad192" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF2A7"/>
+      <stop offset="40%" stop-color="#F5B800"/>
+      <stop offset="100%" stop-color="#A56E00"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="192" height="192" rx="42" fill="url(#bgGrad192)"/>
+  <rect x="8" y="8" width="176" height="176" rx="36" fill="none" stroke="url(#goldGrad192)" stroke-width="2" stroke-dasharray="6 3" opacity="0.6"/>
+
+  <!-- Trishul Motif -->
+  <g fill="url(#goldGrad192)">
+    <path d="M96,40 L101,65 L98,115 L94,115 L91,65 Z" />
+    <path d="M96,85 C78,82 66,68 64,48 C68,64 78,75 91,76 L92,88 Z" />
+    <path d="M96,85 C114,82 126,68 128,48 C124,64 114,75 101,76 L100,88 Z" />
+    <rect x="90" y="115" width="12" height="5" rx="1.5" />
+    <polygon points="91,121 101,121 96,127" />
+    <polygon points="96,127 101,133 91,133" />
+    <rect x="94" y="133" width="4" height="15" rx="1" />
+  </g>
+
+  <text x="96" y="78" text-anchor="middle" fill="#FFFFFF" font-family="'Tiro Devanagari Marathi', serif" font-weight="bold" font-size="28" opacity="0.95">ॐ</text>
+  <text x="96" y="165" text-anchor="middle" fill="url(#goldGrad192)" font-family="'Mukta', sans-serif" font-weight="800" font-size="16">न्यु प्रताप</text>
+</svg>

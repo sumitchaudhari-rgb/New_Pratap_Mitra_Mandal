@@ -32,6 +32,13 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+*.env
+
+# documentation plans / logs
+NewPratapPlan.md
+Newpratapplan.md
+progress.md
+progress,md
 
 # vercel
 .vercel

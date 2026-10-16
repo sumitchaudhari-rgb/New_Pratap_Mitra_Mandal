@@ -1,0 +1,111 @@
+{
+  "nav": {
+    "home": "Home",
+    "idol": "Idol",
+    "deviForms": "Nine Forms of Devi",
+    "gallery": "Gallery",
+    "programme": "Programme",
+    "aarti": "Aarti",
+    "live": "Live Darshan",
+    "community": "Community",
+    "wishes": "Wishes",
+    "quiz": "Quiz",
+    "volunteer": "Volunteer",
+    "contact": "Contact",
+    "admin": "Admin",
+    "donate": "Donate",
+    "joinWhatsApp": "Join WhatsApp"
+  },
+  "announcement": {
+    "text": "This year: Installation of Shri Chhinnamasta Mata — You are welcome!"
+  },
+  "home": {
+    "hero": {
+      "heading": "Our Goddess of Dangarvada",
+      "subheading": "Nyu Pratap Mitra Mandal, Dangarvada Asoda",
+      "intro": "We offer our humble prayers at the feet of Shri Chhinnamasta Mata. Welcome to our Navratri festival.",
+      "ctaIdol": "About the Idol",
+      "ctaAarti": "Aarti Times",
+      "idolAlt": "Shri Chhinnamasta Mata Idol"
+    },
+    "chips": {
+      "gallery": "Gallery",
+      "programme": "Programme",
+      "aarti": "Aarti",
+      "live": "Live Darshan",
+      "donate": "Donate"
+    },
+    "countdown": {
+      "heading": "Countdown to Visarjan",
+      "days": "Days",
+      "hours": "Hours",
+      "minutes": "Minutes",
+      "seconds": "Seconds",
+      "thankYou": "🙏 The festival has concluded. Thank you to all devotees!"
+    },
+    "todayDevi": "Today's Goddess",
+    "todayProgramme": "Today's Programme"
+  },
+  "footer": {
+    "tagline": "Jai Shri Chhinnamasta Mata",
+    "quickLinks": "Quick Links",
+    "contact": "Contact",
+    "followUs": "Follow Us",
+    "address": "Dangarvada Asoda, Dist. Jalgaon (Google Maps)",
+    "landline": "0257-2234567 (Office)",
+    "instagramFollowText": "Follow us & stay connected",
+    "copyright": "© 2026 Nyu Pratap Mitra Mandal, Dangarvada Asoda. All rights reserved."
+  },
+  "pages": {
+    "idol": {
+      "title": "About the Idol",
+      "description": "Details about Shri Chhinnamasta Mata's idol"
+    },
+    "deviForms": {
+      "title": "Nine Forms of Navdurga",
+      "description": "Information about the nine forms of Devi during Navratri"
+    },
+    "gallery": {
+      "title": "Photo Gallery",
+      "description": "Beautiful photographs from the festival"
+    },
+    "programme": {
+      "title": "Programme Schedule",
+      "description": "Complete timetable for the Navratri festival"
+    },
+    "aarti": {
+      "title": "Aarti Collection",
+      "description": "Collection of devotional aartis"
+    },
+    "live": {
+      "title": "Live Darshan",
+      "description": "Watch Shri Chhinnamasta Mata live"
+    },
+    "community": {
+      "title": "Our Community",
+      "description": "Mandal members, history and donors"
+    },
+    "wishes": {
+      "title": "Wishes Wall",
+      "description": "Send your wishes to Mata"
+    },
+    "quiz": {
+      "title": "Quiz",
+      "description": "Test your knowledge of Devi's forms"
+    },
+    "volunteer": {
+      "title": "Volunteer Registration",
+      "description": "Join our festival"
+    },
+    "contact": {
+      "title": "Contact Us",
+      "description": "Get in touch with the Mandal"
+    },
+    "admin": {
+      "title": "Admin Dashboard",
+      "description": "Festival management and notices control"
+    }
+  },
+  "comingSoon": "Coming Soon",
+  "loading": "Loading..."
+}
