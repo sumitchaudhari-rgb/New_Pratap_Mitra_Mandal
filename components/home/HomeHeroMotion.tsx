@@ -158,21 +158,21 @@ export default function HomeHeroMotion({ locale }: { locale: string }) {
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.5 }}
-          className="snap-row no-scrollbar mt-7 justify-center sm:flex-wrap"
+          className="mt-6 flex flex-wrap items-center justify-center gap-2 sm:gap-2.5 px-2 max-w-[340px] sm:max-w-xl mx-auto"
           role="navigation"
           aria-label="Quick links"
         >
           {CHIPS.map(({ key, href, emoji }) => (
             <motion.div
               key={key}
-              whileHover={{ scale: 1.06, y: -3 }}
+              whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
               transition={{ type: "spring", stiffness: 400, damping: 20 }}
             >
               <Link
                 href={href}
                 id={`chip-${key}`}
-                className="snap-start flex items-center gap-1.5 rounded-full border border-gold/40 bg-card/90 backdrop-blur-md px-4 py-2.5 text-xs sm:text-sm font-bold text-foreground/90 shadow-sm transition-colors hover:border-gold hover:text-primary min-h-[44px] whitespace-nowrap"
+                className="flex items-center justify-center gap-1.5 rounded-full border border-gold/40 bg-card/90 backdrop-blur-md px-3.5 py-2 sm:px-4 sm:py-2.5 text-xs sm:text-sm font-bold text-foreground/90 shadow-sm transition-colors hover:border-gold hover:text-primary min-h-[40px] sm:min-h-[44px] whitespace-nowrap"
               >
                 <span aria-hidden="true">{emoji}</span>
                 <span>{t(`chips.${key}` as Parameters<typeof t>[0])}</span>
