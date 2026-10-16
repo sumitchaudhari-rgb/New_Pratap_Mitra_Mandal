@@ -61,19 +61,22 @@ export default function AartiYajmanSchedule({ locale }: AartiYajmanScheduleProps
   useEffect(() => {
     setSchedule(getActiveAartiSchedule());
 
-    const handleStorageChange = (e?: StorageEvent) => {
-      if (!e || e.key === AARTI_MANKARI_STORAGE_KEY) {
-        setSchedule(getActiveAartiSchedule());
+    const handleUpdate = () => {
+      setSchedule(getActiveAartiSchedule());
+    };
+
+    const handleStorage = (e: StorageEvent) => {
+      if (e.key === AARTI_MANKARI_STORAGE_KEY) {
+        handleUpdate();
       }
     };
 
-    window.addEventListener("storage", handleStorageChange);
-    // Custom window event for same-tab updates
-    window.addEventListener("aarti_mankari_updated", handleStorageChange);
+    window.addEventListener("storage", handleStorage);
+    window.addEventListener("aarti_mankari_updated", handleUpdate);
 
     return () => {
-      window.removeEventListener("storage", handleStorageChange);
-      window.removeEventListener("aarti_mankari_updated", handleStorageChange);
+      window.removeEventListener("storage", handleStorage);
+      window.removeEventListener("aarti_mankari_updated", handleUpdate);
     };
   }, []);
 
