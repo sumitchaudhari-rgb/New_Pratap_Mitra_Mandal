@@ -66,6 +66,15 @@ export default function AmbientDevotionalAudio() {
         bellOsc.connect(bellGain);
         bellGain.connect(masterGain);
 
+        bellOsc.onended = () => {
+          try {
+            bellOsc.disconnect();
+            bellGain.disconnect();
+          } catch {
+            // Ignore
+          }
+        };
+
         bellOsc.start(now);
         bellOsc.stop(now + 4);
       };

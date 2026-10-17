@@ -1,5 +1,5 @@
 // Service Worker for Nyu Pratap Mitra Mandal PWA (Navratri 2026)
-const CACHE_NAME = "pratap-mandal-v1";
+const CACHE_NAME = "pratap-mandal-v2";
 const STATIC_ASSETS = [
   "/",
   "/mr",
@@ -48,6 +48,15 @@ self.addEventListener("fetch", (event) => {
 
   // Skip non-GET requests and browser extensions
   if (request.method !== "GET" || !url.protocol.startsWith("http")) return;
+
+  // CRITICAL: NEVER cache Next.js internal chunks, HMR, APIs, or admin dashboards
+  if (
+    url.pathname.startsWith("/_next/") ||
+    url.pathname.startsWith("/api/") ||
+    url.pathname.includes("/admin")
+  ) {
+    return; // Pass through directly to network
+  }
 
   // Static Assets (Images, Icons, Fonts) -> Cache First
   if (

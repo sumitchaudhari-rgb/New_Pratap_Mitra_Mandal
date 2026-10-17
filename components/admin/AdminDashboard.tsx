@@ -94,7 +94,9 @@ export default function AdminDashboard({ locale }: AdminDashboardProps) {
   // Check existing session
   useEffect(() => {
     try {
-      const savedAuth = sessionStorage.getItem("pratap_admin_auth");
+      const savedAuth =
+        sessionStorage.getItem("pratap_admin_auth") ||
+        localStorage.getItem("pratap_admin_auth");
       if (savedAuth === "true") {
         setIsAuthenticated(true);
       }
@@ -249,6 +251,7 @@ export default function AdminDashboard({ locale }: AdminDashboardProps) {
       setIsAuthenticated(true);
       try {
         sessionStorage.setItem("pratap_admin_auth", "true");
+        localStorage.setItem("pratap_admin_auth", "true");
       } catch {
         // Ignore
       }
@@ -267,6 +270,7 @@ export default function AdminDashboard({ locale }: AdminDashboardProps) {
     setPasscode("");
     try {
       sessionStorage.removeItem("pratap_admin_auth");
+      localStorage.removeItem("pratap_admin_auth");
     } catch {
       // Ignore
     }
@@ -736,7 +740,7 @@ export default function AdminDashboard({ locale }: AdminDashboardProps) {
               aartiSchedule.find((d) => d.day === selectedAartiDay) || aartiSchedule[0];
 
             return (
-              <div className="rounded-3xl border-2 border-gold/40 bg-card p-5 sm:p-7 shadow-sm space-y-6">
+              <div id="aarti-edit-card" className="rounded-3xl border-2 border-gold/40 bg-card p-5 sm:p-7 shadow-sm space-y-6 scroll-mt-20">
                 {/* Active Day Info */}
                 <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 border-b border-border/80 pb-4">
                   <div>
@@ -1051,7 +1055,12 @@ export default function AdminDashboard({ locale }: AdminDashboardProps) {
                       <td className="p-2.5 text-right">
                         <button
                           type="button"
-                          onClick={() => setSelectedAartiDay(d.day)}
+                          onClick={() => {
+                            setSelectedAartiDay(d.day);
+                            document
+                              .getElementById("aarti-edit-card")
+                              ?.scrollIntoView({ behavior: "smooth", block: "start" });
+                          }}
                           className="rounded-lg bg-muted px-2.5 py-1 text-[11px] font-bold text-foreground hover:bg-primary hover:text-white transition-all min-h-[30px]"
                         >
                           {isMr ? "संपादित करा" : "Edit"}
