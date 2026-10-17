@@ -1,7 +1,9 @@
 # न्यु प्रताप मित्र मंडळ, डांगरवाडा असोदा — नवरात्रोत्सव २०२६
 > **अधिकृत संकेतस्थळ व प्रोग्रेसिव्ह वेब ॲप्लिकेशन (PWA)**  
-> **Official Website & Progressive Web App for Shri Chhinnamasta Mata Navratri Mahotsav 2026**
+> **Official Website & Progressive Web App for Shri Chhinnamasta Mata Navratri Mahotsav 2026**  
+> 🔗 **थेट संकेतस्थळ (Live Website):** [https://new-pratap-mitra-mandal-szi1.vercel.app/](https://new-pratap-mitra-mandal-szi1.vercel.app/)
 
+[![Vercel Live](https://img.shields.io/badge/Vercel-Live%20App-000000?style=flat&logo=vercel)](https://new-pratap-mitra-mandal-szi1.vercel.app/)
 [![Next.js 16](https://img.shields.io/badge/Next.js-16.4.2-black?style=flat&logo=next.js)](https://nextjs.org/)
 [![React 19](https://img.shields.io/badge/React-19.3.0-blue?style=flat&logo=react)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=flat&logo=typescript)](https://www.typescriptlang.org/)
@@ -100,15 +102,16 @@ npm run start
 
 ## 🌐 उत्पादन उपयोजन (Production Deployment)
 
-### Vercel वर थेट उपयोजन:
-1. हे प्रोजेक्ट GitHub वर पुश करा.
-2. [Vercel Dashboard](https://vercel.com) वर जाऊन नवीन प्रोजेक्ट इंपोर्ट करा.
-3. आवश्यक असल्यास खालील पर्यावरण चले (Environment Variables) `.env.local` मधून जोडा:
+* 🔗 **थेट संकेतस्थळ (Live URL)**: [https://new-pratap-mitra-mandal-szi1.vercel.app/](https://new-pratap-mitra-mandal-szi1.vercel.app/)
+
+### Vercel वर उपयोजन:
+1. हे प्रोजेक्ट GitHub वर उपयोजित आहे.
+2. आवश्यक पर्यावरण चले (Environment Variables) `.env.example` प्रमाणे Vercel Dashboard वर जोडली आहेत:
    ```env
    NEXT_PUBLIC_SUPABASE_URL=your-supabase-url
    NEXT_PUBLIC_SUPABASE_ANON_KEY=your-supabase-anon-key
    ```
-4. **Deploy** वर क्लिक करा.
+3. **Live Deployment**: प्रत्येक Git पुशवर Vercel स्वयंचलित बिल्ड व डिप्लॉय करते.
 
 ---
 

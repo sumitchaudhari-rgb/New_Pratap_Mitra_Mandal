@@ -168,7 +168,7 @@ export default function CommunityView({ locale }: CommunityViewProps) {
           <div className="relative overflow-hidden rounded-3xl border-2 border-gold/40 bg-card shadow-lg">
             <div className="relative aspect-[4/3] sm:aspect-[16/10] w-full">
               <Image
-                src="/images/mandlache-karyakarte.jpeg"
+                src="/images/p2.jpeg"
                 alt="न्यु प्रताप मित्र मंडळाचे सर्व कार्यकर्ते व संघटक"
                 fill
                 priority
